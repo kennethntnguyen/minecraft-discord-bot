@@ -4,7 +4,7 @@ FROM python:3.10.7-slim
 
 WORKDIR /app
 
-COPY source .
+COPY . .
 
 RUN python3.10 -m pip install --no-cache-dir -r requirements.txt
 
