@@ -118,4 +118,4 @@ async def ismobgriefingon(ctx):
             resp = mcr.command("/gamerule mobGriefing")
     await ctx.respond(remove_escape_mc_response(resp))
 
-bot.run(discord_bot_token)
+bot.run(discord_app_token)
