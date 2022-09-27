@@ -97,10 +97,6 @@ async def status(ctx):
             },
             color = discord.Colour(discord_bot_embed_color)
         )
-        print({
-            f"{get_player_fraction(full_stats)} online:": online_players,
-            "Server version: ": f"{get_server_version(full_stats)}"
-        })
         await ctx.respond(embed=embeded_message)
     except:
         await ctx.respond("Error getting server status")
